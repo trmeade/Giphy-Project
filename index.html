@@ -30,23 +30,27 @@
       </div>
     </header>
     <form id="searchForm" method="GET">
-      <input
-        required
-        type="text"
-        name="search-term"
-        id="search-term"
-        placeholder="search GIFs"
-      />
-      <input id="search-btn" class="btn" type="submit" value="Search" />
-      <label for="max-gifs" id="max-gifs-label">Max # GIFs</label>
-      <input
-        id="max-gifs"
-        type="number"
-        name="gif-count"
-        value="20"
-        min="1"
-        max="50"
-      />
+      <div class="form__item">
+        <input
+          required
+          type="text"
+          name="search-term"
+          id="search-term"
+          placeholder="search GIFs"
+        />
+        <input id="search-btn" class="btn" type="submit" value="Search" />
+      </div>
+      <div class="form__item">
+        <label for="max-gifs" id="max-gifs-label">Max # GIFs</label>
+        <input
+          id="max-gifs"
+          type="number"
+          name="gif-count"
+          value="20"
+          min="1"
+          max="50"
+        />
+      </div>
     </form>
     <div id="container-area" class="multi-column-container"></div>
   </body>
