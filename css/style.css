@@ -73,6 +73,9 @@ body {
 }
 
 #searchForm {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   margin-left: 5px;
   padding: 10px;
   width: 425px;
@@ -160,9 +163,6 @@ img {
   }
 
   #searchForm {
-    /* margin-left: 5px;
-    padding: 10px; */
-    /* width: 250px; */
     margin: 10px;
     width: auto;
   }
