@@ -9,7 +9,7 @@ function submit(event) {
   const api_parm = "api_key=" + APIKey;
   const q_parm = "&q=" + searchText;
   const offset_parm = "&offset=" + "0";
-  const limit = "&limit=" + document.getElementById("max-gifs");
+  const limit = "&limit=" + document.getElementById("max-gifs").value;
   const fetchStr = url + endpoint + api_parm + q_parm + offset_parm + limit;
 
   console.log(`Searching for: ${fetchStr}`);
