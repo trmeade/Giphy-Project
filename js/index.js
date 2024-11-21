@@ -9,7 +9,7 @@ function submit(event) {
   const api_parm = "api_key=" + APIKey;
   const q_parm = "&q=" + searchText;
   const offset_parm = "&offset=" + "0";
-  const limit = "&limit=" + "1";
+  const limit = "&limit=" + "10";
   const fetchStr = url + endpoint + api_parm + q_parm + offset_parm + limit;
 
   console.log(`Searching for: ${fetchStr}`);
@@ -42,56 +42,19 @@ Pagination: {
     "offset": 0
 }
 */
-/*
-content array items to destructure
-{
-  type: "",
-  title: "",
-  images: {
-    downsized: {
-      url: ""
-    },
-    downsized_still: {
-      url: ""
-    }
-  }
-}
-*/
+
 function displayImages(images) {
   for (const image of images) {
-    let fig = document.createElement("figure");
-    let img = document.createElement("img");
-    let fc = document.createElement("figcaption");
-
-    img.src = image.images.downsized.url;
-    img.alt = image.title;
-    fc.textContent = image.title;
-    fig.appendChild(img);
-    fig.appendChild(fc);
-    let out = document.getElementById("gif-area");
-    out.insertAdjacentElement("afterbegin", fig);
+    let str = "";
+    str += "<div class='multi-column-container'>";
+    str += `<img class='multi-column-item' src='${image.images.downsized_medium.url}' alt='${image.title}'>`;
+    str += "</div>";
+    document.getElementById("container-area").innerHTML += str;
     document.getElementById("search-term").value = "";
   }
 }
 
 window.onload = () => {
-  //document.getElementById("search-btn").addEventListener("submit", submit);
   const searchForm = document.getElementById("searchForm");
   searchForm.addEventListener("submit", submit);
 };
-
-/*
-content array items to destructure
-{
-  type: "",
-  title: "",
-  images: {
-    downsized: {
-      url: ""
-    },
-    downsized_still: {
-      url: ""
-    }
-  }
-}
-*/

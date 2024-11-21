@@ -66,3 +66,27 @@ body {
 .nav__link:hover {
   color: mediumblue;
 }
+
+.multi-column-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 5px;
+}
+
+.multi-column-item {
+  width: 200px;
+  height: 200px;
+}
+
+img {
+  width: 200;
+  height: 200;
+  object-fit: cover;
+}
+
+/*
+ .multi-column-item {
+  flex: 1 1;
+} 
+*/
