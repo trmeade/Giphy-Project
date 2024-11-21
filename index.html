@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <script type="text/javascript" src="./js/index.js"></script>
     <title>Document</title>
   </head>
   <body>
@@ -30,5 +31,19 @@
         </nav>
       </div>
     </header>
+    <form id="searchForm" method="GET">
+      <label>
+        Search
+        <input
+          required
+          type="text"
+          name="search-term"
+          id="search-term"
+          placeholder="search"
+        />
+      </label>
+      <input id="search-btn" class="btn" type="submit" value="Search" />
+    </form>
+    <div id="gif-area"></div>
   </body>
 </html>
