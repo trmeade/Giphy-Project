@@ -51,6 +51,11 @@ body {
   min-height: 60px;
 }
 
+.header__content > #app-title {
+  padding-top: 10px;
+  font-size: 20px;
+}
+
 .nav__list {
   display: flex;
   column-gap: 40px;
@@ -121,4 +126,43 @@ img {
   width: 200;
   height: 200;
   object-fit: cover;
+}
+
+@media (max-width: 320px) {
+  body {
+    padding-top: 120px;
+  }
+
+  .header__content {
+    padding: 10px 5px;
+    row-gap: 8px;
+  }
+
+  .header__content > title {
+    font-size: 30px;
+  }
+
+  .nav__list {
+    column-gap: 20px;
+  }
+
+  .header__content {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .header__content > #app-title {
+    font-size: 20px;
+  }
+
+  #searchForm {
+    margin-left: 5px;
+    padding: 10px;
+    width: 250px;
+  }
+
+  #search-term {
+    width: 150px;
+    height: 20px;
+  }
 }
