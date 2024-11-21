@@ -40,6 +40,15 @@
         placeholder="search GIFs"
       />
       <input id="search-btn" class="btn" type="submit" value="Search" />
+      <label for="max-gifs" id="max-gifs-label">Max # GIFs</label>
+      <input
+        id="max-gifs"
+        type="number"
+        name="gif-count"
+        value="20"
+        min="1"
+        max="50"
+      />
     </form>
     <div id="container-area" class="multi-column-container"></div>
   </body>

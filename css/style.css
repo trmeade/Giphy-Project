@@ -70,7 +70,7 @@ body {
 #searchForm {
   margin-left: 5px;
   padding: 10px;
-  width: 300px;
+  width: 425px;
   border-style: solid;
   border-color: darkgray;
   border-width: 1px;
@@ -89,6 +89,20 @@ body {
 
 #search-btn:hover {
   background-color: mediumblue;
+}
+
+#max-gifs-label {
+  padding-left: 5px;
+  font-size: 12px;
+}
+
+#max-gifs {
+  width: 40px;
+  text-align: center;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 .multi-column-container {
