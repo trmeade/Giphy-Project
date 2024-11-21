@@ -165,12 +165,8 @@ img {
   #searchForm {
     margin: 10px;
     width: auto;
-  }
-
-  #form_item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
 
   #search-term {
