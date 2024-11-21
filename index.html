@@ -11,13 +11,13 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script type="text/javascript" src="./js/index.js"></script>
-    <title>Document</title>
+    <title>Giphy API Project</title>
   </head>
   <body>
     <header class="header">
       <div class="header__content">
         <a href="#">
-          <h3>Giphy API Project</h3>
+          <h4>Giphy API Project</h4>
         </a>
         <nav class="nav">
           <ul class="nav__list">
@@ -32,16 +32,13 @@
       </div>
     </header>
     <form id="searchForm" method="GET">
-      <label>
-        Search
-        <input
-          required
-          type="text"
-          name="search-term"
-          id="search-term"
-          placeholder="search"
-        />
-      </label>
+      <input
+        required
+        type="text"
+        name="search-term"
+        id="search-term"
+        placeholder="search GIFs"
+      />
       <input id="search-btn" class="btn" type="submit" value="Search" />
     </form>
     <div id="container-area" class="multi-column-container"></div>

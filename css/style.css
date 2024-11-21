@@ -28,8 +28,8 @@ a {
 body {
   background-color: #eaeff3;
   font-family: "Inter", sans-serif;
-  height: 3000px;
-  padding-top: 130px;
+  /* height: 3000px; */
+  padding-top: 70px;
 }
 
 .header {
@@ -67,6 +67,30 @@ body {
   color: mediumblue;
 }
 
+#searchForm {
+  margin-left: 5px;
+  padding: 10px;
+  width: 300px;
+  border-style: solid;
+  border-color: darkgray;
+  border-width: 1px;
+  border-radius: 10px;
+}
+
+#search-term {
+  width: 220px;
+  height: 20px;
+}
+
+#search-btn {
+  background-color: #0071e3;
+  color: white;
+}
+
+#search-btn:hover {
+  background-color: mediumblue;
+}
+
 .multi-column-container {
   display: flex;
   flex-wrap: wrap;
@@ -84,9 +108,3 @@ img {
   height: 200;
   object-fit: cover;
 }
-
-/*
- .multi-column-item {
-  flex: 1 1;
-} 
-*/
