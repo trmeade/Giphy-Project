@@ -112,6 +112,7 @@ input[type="number"]::-webkit-inner-spin-button {
   flex-wrap: wrap;
   flex-direction: row;
   padding: 5px;
+  align-items: center;
 }
 
 .multi-column-item {
@@ -166,7 +167,7 @@ img {
 }
 
 /******* Media query *********/
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 328px) {
   body {
     padding-top: 140px;
     padding-left: auto;
