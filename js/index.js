@@ -66,6 +66,16 @@ function aboutClose() {
   dlg.close();
 }
 
+function displayContact() {
+  const dlg = document.getElementById("contact-dialog");
+  dlg.showModal();
+}
+
+function contactClose() {
+  const dlg = document.getElementById("contact-dialog");
+  dlg.close();
+}
+
 window.onload = () => {
   const searchForm = document.getElementById("searchForm");
   searchForm.addEventListener("submit", submit);

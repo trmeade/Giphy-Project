@@ -22,14 +22,20 @@
             <li class="nav__item">
               <button
                 id="aboutButton"
+                class="nav__link btn"
                 onclick="javascript:displayAbout()"
-                class="btn"
               >
                 About
               </button>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Contact</a>
+              <button
+                id="contactButton"
+                class="nav__link btn"
+                onclick="javascript:displayContact()"
+              >
+                Contact
+              </button>
             </li>
           </ul>
         </nav>
@@ -63,6 +69,17 @@
       <div class="modal-content">
         <span id="about-close" onclick="javascript:aboutClose()">&times;</span>
         <p>Giphy API Project version 1.0</p>
+      </div>
+    </dialog>
+    <dialog class="modal" id="contact-dialog">
+      <div class="modal-content">
+        <span id="contact-close" onclick="javascript:contactClose()"
+          >&times;</span
+        >
+        <p>
+          Send an email:
+          <a id="email" href="mailto:trmaccts@pm.me">Application Support</a>
+        </p>
       </div>
     </dialog>
   </body>

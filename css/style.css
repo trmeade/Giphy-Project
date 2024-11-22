@@ -151,7 +151,8 @@ img {
   width: 80%;
 }
 
-#about-close {
+#about-close,
+#contact-close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
@@ -164,6 +165,10 @@ img {
   float: right;
   font-size: 28px;
   font-weight: bold;
+}
+
+#email {
+  color: blue;
 }
 
 @media screen and (max-width: 320px) {
