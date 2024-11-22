@@ -61,17 +61,6 @@ body {
   column-gap: 40px;
 }
 
-.nav__link {
-  color: rgba(0, 0, 0, 0.65);
-  font-weight: 500;
-  font-size: 15px;
-  transition: all 0.4s;
-}
-
-.nav__link:hover {
-  color: mediumblue;
-}
-
 #searchForm {
   display: flex;
   flex-direction: row;
@@ -93,6 +82,11 @@ body {
 .btn {
   background-color: #0071e3;
   color: white;
+  padding: 7px 18px;
+  border-radius: 1000px;
+  font-size: 12px;
+  transition: all 0.4s;
+  border: none;
 }
 
 .btn:hover {
