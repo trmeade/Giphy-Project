@@ -121,8 +121,8 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 img {
-  width: 200;
-  height: 200;
+  width: 200px;
+  height: 200px;
   object-fit: cover;
 }
 
@@ -170,7 +170,6 @@ img {
 @media screen and (max-width: 328px) {
   body {
     padding-top: 140px;
-    padding-left: auto;
   }
 
   .header__content {
