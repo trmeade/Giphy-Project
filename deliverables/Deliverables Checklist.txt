@@ -1,0 +1,16 @@
+Deliverables Checklist
+
+1 - At least 3 User stories (DONE)
+
+2 - Wireframes (DONE)
+	- Desktop UI Page
+	- Mobile Page
+
+3 - GitHub Repo 
+
+4 - Web App Requirements:
+
+5 - readme.md file
+
+
+	
