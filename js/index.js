@@ -56,7 +56,20 @@ function displayImages(images) {
   }
 }
 
+function displayAbout() {
+  const dlg = document.getElementById("about-dialog");
+  dlg.showModal();
+}
+
+function aboutClose() {
+  const dlg = document.getElementById("about-dialog");
+  dlg.close();
+}
+
 window.onload = () => {
   const searchForm = document.getElementById("searchForm");
   searchForm.addEventListener("submit", submit);
+
+  // const aboutBtn = document.getElementById("aboutButton");
+  // aboutBtn.onclick = displayAbout;
 };

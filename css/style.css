@@ -90,12 +90,12 @@ body {
   height: 20px;
 }
 
-#search-btn {
+.btn {
   background-color: #0071e3;
   color: white;
 }
 
-#search-btn:hover {
+.btn:hover {
   background-color: mediumblue;
 }
 
@@ -129,6 +129,41 @@ img {
   width: 200;
   height: 200;
   object-fit: cover;
+}
+
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 30%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  width: 80%;
+}
+
+#about-close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 320px) {

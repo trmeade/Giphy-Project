@@ -20,7 +20,13 @@
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">About</a>
+              <button
+                id="aboutButton"
+                onclick="javascript:displayAbout()"
+                class="btn"
+              >
+                About
+              </button>
             </li>
             <li class="nav__item">
               <a href="#" class="nav__link">Contact</a>
@@ -53,5 +59,11 @@
       </div>
     </form>
     <div id="container-area" class="multi-column-container"></div>
+    <dialog class="modal" id="about-dialog">
+      <div class="modal-content">
+        <span id="about-close" onclick="javascript:aboutClose()">&times;</span>
+        <p>Giphy API Project version 1.0</p>
+      </div>
+    </dialog>
   </body>
 </html>
